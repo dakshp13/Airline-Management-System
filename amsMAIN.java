@@ -39,9 +39,11 @@ amsAllFlights.addFlight(H1);
       A1.createFlightCode();
       System.out.println(A1.getFlightCode());
 
+//using FlightSearch method to find flights based on certain parameters
       List<amsFlightPackage> searchedFlights = amsFlightSearch.FlightSearch("Boeing 737-700","Toronto","12:00");
       System.out.println(searchedFlights);
-
+//Booking flight A1 alongside the seat parameters
+//economy seats = 3, business seats = 3, firstclass seats = 3
       amsFlightBooking.FlightBooking(A1, 3,2,1);
 
 
